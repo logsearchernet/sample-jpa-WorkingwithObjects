@@ -1,0 +1,34 @@
+13:43:21,881 DEBUG SQL:109 - 
+    insert 
+    into
+        message
+        (TEXT) 
+    values
+        (?)
+13:43:21,894 TRACE BasicBinder:81 - binding parameter [1] as [VARCHAR] - [Hello World with Hibernate as JPA Provider]
+13:54:27,892 DEBUG SQL:109 - 
+    insert 
+    into
+        message
+        (TEXT) 
+    values
+        (?)
+13:54:27,904 TRACE BasicBinder:81 - binding parameter [1] as [VARCHAR] - [Hello]
+13:54:27,953 DEBUG SQL:109 - 
+    select
+        message0_.ID as ID1_0_0_,
+        message0_.TEXT as TEXT2_0_0_ 
+    from
+        message message0_ 
+    where
+        message0_.ID=?
+13:54:27,956 TRACE BasicBinder:81 - binding parameter [1] as [BIGINT] - [1]
+13:54:27,973 DEBUG SQL:109 - 
+    update
+        message 
+    set
+        TEXT=? 
+    where
+        ID=?
+13:54:27,973 TRACE BasicBinder:81 - binding parameter [1] as [VARCHAR] - [Hi]
+13:54:27,974 TRACE BasicBinder:81 - binding parameter [2] as [BIGINT] - [1]
